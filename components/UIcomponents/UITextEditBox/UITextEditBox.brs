@@ -2,7 +2,7 @@ sub init()
 
   m.top.id = "UITextEditBox"
 
-  m.FOUCSED_BACKGROUND_URI = "pkg:/images/fhd/textEditBox/txtbox-focused.png"
+  m.FOCUSED_BACKGROUND_URI = "pkg:/images/fhd/textEditBox/txtbox-focused.png"
   m.UNFOCUSED_BACKGROUND_URI = "pkg:/images/fhd/textEditBox/txtbox-nofocus.png"
 
   m.baseTxtBox = m.top.findNode( "baseTxtBox" )
@@ -45,7 +45,7 @@ function onTextBoxActive( event as Object )
   isActive =  event.getData()
 
   if ( isActive )
-    m.backgroundImg.uri = m.FOUCSED_BACKGROUND_URI
+    m.backgroundImg.uri = m.FOCUSED_BACKGROUND_URI
   else
     m.backgroundImg.uri = m.UNFOCUSED_BACKGROUND_URI
   end if
